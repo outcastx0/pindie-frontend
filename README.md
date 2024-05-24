@@ -1,1 +1,1 @@
-Мой бэкенд: https://github.com/outcastx0/pindie-backend
+Мой бэкенд: https://outcast.nomoredomainswork.ru/
