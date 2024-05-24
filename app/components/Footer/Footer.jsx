@@ -10,13 +10,13 @@ export const Footer = () => {
             <a href=".." className={Styles["footer__logo"]}> <span className={Styles["footer__logo-name"]}>pindie</span> <span className={Styles["footer__logo-copy"]}>, XXI век</span> </a>}
       <ul className={Styles["social-list"]}>
         <li className={Styles["social-list__item"]}>
-          <a href="" className={Styles["social-list__link"]}>YT</a>
+          <a href="https://www.youtube.com/@YandexPracticum" className={Styles["social-list__link"]}>YT</a>
         </li>
         <li className={Styles["social-list__item"]}>
-          <a href="" className={Styles["social-list__link"]}>ВК</a>
+          <a href="https://vk.com/yandex.practicum" className={Styles["social-list__link"]}>ВК</a>
         </li>
         <li className={Styles["social-list__item"]}>
-          <a href="" className={Styles["social-list__link"]}>TG</a>
+          <a href="https://t.me/yndx_practicum" className={Styles["social-list__link"]}>TG</a>
         </li>
       </ul>
     </footer>
