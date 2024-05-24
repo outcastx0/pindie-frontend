@@ -1,6 +1,7 @@
 export const getData = async (url) => {
   try {
     const response = await fetch(url)
+    console.log(response);
     if (response.status !== 200) {
       throw new Error('Ошибка получения данных')
     }
