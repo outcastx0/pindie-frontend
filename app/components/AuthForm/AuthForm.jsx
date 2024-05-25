@@ -8,7 +8,7 @@ import { useState, useEffect } from 'react';
 import { useStore } from '@/app/store/app-store';
 
 export const AuthForm = (props) => {
-  const [authData, setAuthData] = useState({ username: "",  password: "" }); //email: ""
+  const [authData, setAuthData] = useState({ username: "", email: "", password: "" });
   const [message, setMessage] = useState({ status: null, text: null });
   const authContext = useStore();
 
@@ -27,8 +27,7 @@ export const AuthForm = (props) => {
     if (isResponseOk(userData)) {
       const user = {...userData, id: userData._id};
       authContext.login(user, userData.jwt);
-      console.log(authContext.user);
-      setMessage({ status: "success", text: "Вы авторизовались!" });
+      props.title == 'Авторизация' ? (setMessage({ status: "success", text: "Вы авторизовались!" })) : (setMessage({ status: "success", text: "Вы авторизовались!" }));
     }
     else {
       {
